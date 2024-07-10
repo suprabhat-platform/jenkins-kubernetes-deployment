@@ -1,7 +1,7 @@
 pipeline {
 
   environment {
-    dockerimagename = "bravinwasike/react-app"
+    dockerimagename = "suprabhatcs/react-app"
     dockerImage = ""
   }
 
@@ -11,7 +11,8 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/Bravinsimiyu/jenkins-kubernetes-deployment.git'
+        git 'https://github.com/suprabhat-platform/jenkins-kubernetes-deployment.git'
+        
       }
     }
 
